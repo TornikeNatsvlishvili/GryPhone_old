@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/note_background_gradient"
+        android:orientation="vertical" >
+
+        <!-- android:background="@drawable/note_background" -->
+
+        <TextView
+            android:id="@+id/note_page_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_margin="6dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/note_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/note_title_edit"
+                android:gravity="center"
+                android:text="Title"
+                android:textColor="#431d00"
+                android:drawablePadding="5dp"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:fadeScrollbars="false" >
+
+            <EditText
+                android:id="@+id/notes_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textColor="#af4b00"
+                android:textSize="20sp" />
+        </ScrollView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

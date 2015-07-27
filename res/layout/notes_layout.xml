@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <include
+        android:id="@+id/news_topBar"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_bar_notes_layout" />
+
+    <include
+        android:id="@+id/news_loadingbar"
+        android:layout_alignParentTop="true"
+        layout="@layout/loading_bar_layout"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/news_topBar" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/note_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/note_page_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/news_topBar"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/note_page_background"
+            android:gravity="center"
+            android:text="1/1"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/notes_create_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/notes_add_background_selector" />
+
+        <ImageButton
+            android:id="@+id/notes_delete_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/notes_remove_background_selector" />
+    </RelativeLayout>
+    <!-- android:src="@drawable/notes_delete" -->
+    <!-- android:src="" -->
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/note_add_delete_layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="100dp" -->
+    <!-- android:background="#000000" > -->
+    <!-- </RelativeLayout> -->
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Info -->
+    <string name="app_name">GryPhone</string>
+    <!-- versionName should contain only numbers because of Main Activity notification dialog -->
+    <string name="version">1.28</string>
+    <string name="mapKey">0ab6KhWdbrD6Hd3GuG1csMd4BuCv0OpH15Vnf-A</string>
+
+    <!-- Strings -->
+    <string name="search_hint">Search Library...</string>
+    <string name="search_title">Library Search:</string>
+
+    <!-- Building List -->
+    <string-array name="buildings">
+        <item>AC - Athletics Centre</item>
+        <item>ANNU - Animal Science &amp; Nutrition</item>
+        <item>ALEX - Alexander Hall</item>
+        <item>AXEL - Axelrod Institute of Ichthyology</item>
+        <item>BIO - Biodiversity Institute of Ontario</item>
+        <item>BWH - Blackwood Hall</item>
+        <item>CAF - Central Animal Facility</item>
+        <item>CRSC - Crop Science</item>
+        <item>DH - Day Hall</item>
+        <item>EBA - Environmental Biology Annex #1</item>
+        <item>ECB - Edmund C. Bovey Administrative Building</item>
+        <item>FS - Food Science</item>
+        <item>GRHM - Graham Hall</item>
+        <item>HUTT - H.L. Hutt Building</item>
+        <item>JHNH - Johnston Hall</item>
+        <item>JTP - John T. Powell Building</item>
+        <item>LA - Landscape Architecture</item>
+        <item>MAC - Macdonald Hall</item>
+        <item>MACK - MacKinnon Building</item>
+        <item>MACN - MacNaughton Building</item>
+        <item>MACS - Macdonald Stewart Hall</item>
+        <item>MASS - Massey Hall</item>
+        <item>MCLN - MacLachlan Building</item>
+        <item>MINS - Macdonald Institute</item>
+        <item>MLIB - McLaughlin Library</item>
+        <item>MSAC - Macdonald Stewart Art Centre</item>
+        <item>OVC - OVC Main Building</item>
+        <item>PAHL - OVC Pathobiology AHL</item>
+        <item>REYN - Reynolds Building</item>
+        <item>RICH - Richards Building</item>
+        <item>ROZH - Rozanski Hall</item>
+        <item>SCIE - Science Complex</item>
+        <item>TCI - TransCanada Institute</item>
+        <item>THRN - Thornbrough Building</item>
+        <item>VSER - Vehicle Services Building</item>
+        <item>WMEM - War Memorial Hall</item>
+        <item>ZAV - Zavitz Hall</item>
+        <item>ZOOA - Zoology Annex #1</item>
+        <item>ZOOB - Zoology Annex #2</item>
+    </string-array>
+
+    <!-- URLs -->
+    <string name="url_mealplan">https://www.hospitality.uoguelph.ca/accountservices/chooseaccount.cfm?action=balance</string>
+
+</resources>

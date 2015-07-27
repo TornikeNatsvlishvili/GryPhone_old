@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1" >
+
+    <ImageView
+        android:id="@+id/gryph_logo_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_gryphlogo" >
+    </ImageView>
+
+    <GridView
+        android:id="@+id/main_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_gallery_layout"
+        android:layout_below="@id/gryph_logo_image"
+        android:layout_marginRight="-2px"
+        android:fadingEdgeLength="10dp"
+        android:gravity="center"
+        android:horizontalSpacing="1px"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1px" >
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/main_gallery_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dark_gradient"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="3dp"
+            android:text="Student Tools"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#777777" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/main_courselinkBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:drawableTop="@drawable/main_courselink_selector"
+                android:text="CourseLink"
+                android:textColor="#ffffff" >
+            </Button>
+
+            <Button
+                android:id="@+id/main_gryphmailBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:drawableTop="@drawable/main_gryphmail_selector"
+                android:text="Gryph Mail"
+                android:textColor="#ffffff" >
+            </Button>
+
+            <Button
+                android:id="@+id/main_webadvisorBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:drawableTop="@drawable/main_webadvisor_selector"
+                android:text="Web Advisor"
+                android:textColor="#ffffff" >
+            </Button>
+
+            <Button
+                android:id="@+id/main_csaBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:drawableTop="@drawable/main_csa_selector"
+                android:text="CSA"
+                android:textColor="#ffffff" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_sliding_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_bottom_bar_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:visibility="invisible" >
+
+        <Button
+            android:id="@+id/main_campus_eventsbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:drawableTop="@drawable/main_campus_event_selector"
+            android:text="Campus Events"
+            android:textColor="#ffffff" >
+        </Button>
+
+        <Button
+            android:id="@+id/main_student_eventsbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:drawableTop="@drawable/main_student_event_selector"
+            android:text="Student Events"
+            android:textColor="#ffffff" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

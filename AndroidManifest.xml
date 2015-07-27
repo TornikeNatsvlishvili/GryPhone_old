@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Tornike.Gryphone"
+    android:versionCode="28"
+    android:versionName="@string/version" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="13" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <receiver
+            android:name=".CourseSchedule.ClassAlarmReceiver"
+            android:process=":remote" >
+        </receiver>
+        <receiver
+            android:name=".CourseSchedule.LabAlarmReceiver"
+            android:process=":remote" >
+        </receiver>
+        <receiver android:name=".CourseSchedule.BootReciever" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".GryphoneActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewsEventActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".News.NewsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Events.Campus.CampusEventsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".News.NewsEnlargedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Events.Campus.EventEnlargedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Maps.MapsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Library.LibraryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Bus.BusActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Schedule.ScheduleActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Events.Students.StudentEventsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".WebViewer.WebViewerActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Emergency.EmergencyActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Notes.NoteActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".CourseSchedule.CourseScheduleActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".CourseSchedule.AddCourseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullHeightDialog" />
+        <activity
+            android:name=".MealPlanBalance.MealPlanBalanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullHeightDialog" />
+        <activity
+            android:name=".Settings.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+    </application>
+
+</manifest>

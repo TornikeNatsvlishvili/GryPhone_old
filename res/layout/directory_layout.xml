@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/directory_topBar"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_bar_library_layout" />
+
+    <LinearLayout
+        android:id="@+id/directory_searchbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/directory_topBar"
+        android:background="@drawable/library_search_background"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:paddingBottom="16dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="6dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="0dip"
+            android:paddingLeft="2dip"
+            android:text="Directory Search:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorPrimaryInverse" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-5dip"
+            android:layout_marginTop="1dip"
+            android:addStatesFromChildren="true"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/directory_search_query"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:hint="Search Directory..."
+                android:paddingLeft="8dip"
+                android:paddingRight="6dip" />
+
+            <Button
+                android:id="@+id/directory_search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dip"
+                android:drawableLeft="@drawable/library_search_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/directory_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/directory_searchbox"
+        android:cacheColorHint="#00000000"
+        android:divider="#45403a"
+        android:dividerHeight="1px"
+        android:fadeScrollbars="false"
+        android:fastScrollEnabled="true"
+        android:listSelector="@null" >
+    </ListView>
+
+    <include
+        android:id="@+id/directory_loadingbar"
+        layout="@layout/loading_bar_layout"
+        android:visibility="invisible" />
+
+</RelativeLayout>

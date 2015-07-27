@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/schedule_topBar"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_bar_schedule" />
+
+    <TextView
+        android:id="@+id/schedule_list_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schedule_topBar"
+        android:background="@drawable/uog_red_gradient"
+        android:paddingBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="1dp"
+        android:text="Class list:"
+        android:textColor="@color/white"
+        android:textSize="15sp" >
+    </TextView>
+
+    <ListView
+        android:id="@+id/schedule_course_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/schedule_list_text"
+        android:fadeScrollbars="false" >
+    </ListView>
+
+</RelativeLayout>

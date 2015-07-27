@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Pressed Or Selected -->
+    <item android:drawable="@drawable/main_grid_item_background_selected" android:state_pressed="true"/>
+    <item android:drawable="@drawable/main_grid_item_background"/>
+    
+    <!-- Not Pressed -->
+    <!-- <item android:state_pressed="false" android:drawable="@drawable/main_grid_item_background_unselected" /> -->
+    <!-- Not Focused -->
+    <!-- <item android:state_focused="false" android:drawable="@drawable/main_grid_item_background_unselected" /> -->
+    <!-- Not Selected -->
+    <!-- <item android:state_selected="false" android:drawable="@drawable/main_grid_item_background_unselected" /> -->
+
+</selector>

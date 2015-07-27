@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/event_campus_title_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:textSize="25sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/event_campus_date_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_campus_title_text"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textColor="#ff0000"
+        android:textSize="12sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/linetext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_campus_date_text"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:text="_____________________________________________"
+        android:textColor="#b4b4b4"
+        android:textSize="8sp" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/event_campus_add_btn"
+        android:layout_below="@id/linetext"
+        android:paddingBottom="5dp" >
+
+        <TextView
+            android:id="@+id/event_campus_description_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="12sp" >
+        </TextView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/event_campus_add_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/news_more_news_chooser"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="Add to Calendar"
+        android:textColor="#ffffff" >
+    </Button>
+
+</RelativeLayout>

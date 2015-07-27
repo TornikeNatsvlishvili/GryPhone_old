@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/event_student_row"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="@drawable/news_list_background_selector" >
+
+    <ImageView
+        android:id="@+id/event_student_list_row_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ff0000" />
+
+    <TextView
+        android:id="@+id/event_student_list_row_icon_text"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/event_student_list_row_title_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/event_student_link_icon"
+        android:layout_toRightOf="@id/event_student_list_row_icon"
+        android:maxLines="2"
+        android:text="title"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/event_student_link_icon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/link_icon" />
+
+    <RelativeLayout
+        android:id="@+id/event_student_row_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/event_student_list_row_title_text"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@+id/event_student_list_row_icon" >
+
+        <ImageView
+            android:id="@+id/event_student_list_row_availability_icon"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/event_student_list_row_icon" />
+
+        <TextView
+            android:id="@+id/event_student_list_row_availability_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/event_student_list_row_availability_icon"
+            android:text="availabilty"
+            android:textColor="@drawable/news_list_text_color_selector"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/event_student_list_row_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="date"
+            android:textColor="@drawable/news_list_text_color_selector"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

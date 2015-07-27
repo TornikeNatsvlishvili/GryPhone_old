@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FirstText">
+        <item name="android:colorForeground">#f0f</item>
+        <item name="android:padding">4sp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#CC3300</item>
+        <item name="android:gravity">left</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:colorBackground">#999</item>
+    </style>
+
+    <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="33dp"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/dark_gradient" >
+
+    <ImageView
+        android:id="@+id/top_bar_icon"
+        android:layout_width="74.25dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/top_bar_background_selector" />
+
+    <TextView
+        android:id="@+id/top_bar_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/top_bar_icon"
+        android:layout_toLeftOf="@+id/top_bar_last"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="15dp"
+        android:text="topBar"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/top_bar_last"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_toLeftOf="@+id/top_bar_page_number_text"
+        android:background="@drawable/top_bar_arrow_last_background_selector" />
+    
+	<TextView android:id="@+id/top_bar_page_number_text"
+	    android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/top_bar_next"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="News Item: 1"
+        android:textSize="8sp"/>
+    <ImageButton
+        android:id="@+id/top_bar_next"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/top_bar_arrow_next_background_selector" />
+
+</RelativeLayout>
